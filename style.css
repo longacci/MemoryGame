@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100vh;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    : ;
+    background-color: rgb(45, 166, 247);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box {
+    width: 500px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+.box .img {
+    width: 100%;
+}
+.box .img.section {
+    border: 1px solid white;
+}
+.point {
+    position: fixed;
+    top: 40px;
+    left: 40px;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+.success {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    font-size: 30px;
+    color: white;
+    background-color: green;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: 1s;
+}
